@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 require 'benchmark'
 
-file_path = 'input/day1_1.txt'
+file_path = 'input/day1.txt'
 # r is readmode
 file = File.open(file_path, 'r')
 
