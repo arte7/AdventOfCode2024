@@ -5,7 +5,6 @@ file_path = 'input/day_input.txt'
 file = File.open(file_path, 'r')
 
 input = <<~INPUT
-
 INPUT
 
 result = []
