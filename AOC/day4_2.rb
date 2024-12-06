@@ -47,5 +47,4 @@ find_x.call(flip_right.call(matrix))
 find_x.call(flip_right.call(flip_right.call(matrix)))
 find_x.call(flip_right.call(flip_right.call(flip_right.call(matrix))))
 
-puts ""
 puts "total #{count}"

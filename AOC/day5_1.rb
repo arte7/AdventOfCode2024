@@ -40,7 +40,9 @@ bigger_than = {}
 directions = []
 e = []
 
-e = file.read.split(/\n\n/)
+# e = file.read.split(/\n\n/)
+e = input.split(/\n\n/)
+
 file.close
 
 e[0].split(/\n/).each do |i|
@@ -60,6 +62,7 @@ directions.each do |line|
     if bigger_than[line[i]].nil?
       break
     elsif bigger_than[line[i]].include?(line[i+1]) && ((i+1) == len)
+      print line
       result << line[mid]
     elsif bigger_than[line[i]].include?(line[i+1])
     else

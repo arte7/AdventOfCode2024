@@ -54,8 +54,6 @@ find_diagonal = Proc.new do |m|
   end
 end
 
-
-
 find_in_line.call(array)
 find_diagonal.call(matrix)
 # 1st flip right
@@ -74,5 +72,4 @@ reversed_matrix = reverse.call(transposed_matrix)
 transposed_matrix = reversed_matrix.transpose
 find_diagonal.call(transposed_matrix)
 
-puts ""
 puts "total #{count}"
