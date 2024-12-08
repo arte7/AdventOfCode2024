@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-file_path = 'input/day_input.txt'
+file_path = 'input/day.txt'
 # r is readmode
 file = File.open(file_path, 'r')
 
