@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# TODO: finish!!!!!!
 file_path = 'input/day2.txt'
 # r is readmode
 file = File.open(file_path, 'r')
