@@ -21,14 +21,18 @@ INPUT
 result = []
 
 def get_operators(len)
-  a = [:+, :*]
+  a = [:+, :*, :c]
   b = a.repeated_permutation(len).to_a
 end
 
 def calculate(numbers, operators)
   acc = numbers[0]
   operators.each_with_index do |op, idx|
-    acc = numbers[idx+1].send(op, acc)
+    if op == :c
+      acc = "#{acc}#{numbers[idx+1]}".to_i
+    else
+      acc = numbers[idx+1].send(op, acc)
+    end
   end
   acc
 end
